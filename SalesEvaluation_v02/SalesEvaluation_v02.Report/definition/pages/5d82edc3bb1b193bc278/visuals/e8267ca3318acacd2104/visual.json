@@ -1,0 +1,1313 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "e8267ca3318acacd2104",
+  "position": {
+    "x": 16,
+    "y": 240,
+    "z": 3000,
+    "height": 464,
+    "width": 1248,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "NotaFederacao"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.NotaFederacao",
+              "nativeQueryRef": "NotaFederacao1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "NotaModelo"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.NotaModelo",
+              "nativeQueryRef": "NotaModelo1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "NotaSerie"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.NotaSerie",
+              "nativeQueryRef": "NotaSerie1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "NotaNumero"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.NotaNumero",
+              "nativeQueryRef": "NotaNumero1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "NotaEmissao"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.NotaEmissao",
+              "nativeQueryRef": "NotaEmissao1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoItem"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoItem",
+              "nativeQueryRef": "ProdutoItem1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoCodigo"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoCodigo",
+              "nativeQueryRef": "ProdutoCodigo1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoQuantidade"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoQuantidade",
+              "nativeQueryRef": "ProdutoQuantidade1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoUnidade"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoUnidade",
+              "nativeQueryRef": "ProdutoUnidade1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoDescricao"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoDescricao",
+              "nativeQueryRef": "ProdutoDescricao1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoValor"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoValor",
+              "nativeQueryRef": "ProdutoValor1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoCFOP"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoCFOP",
+              "nativeQueryRef": "ProdutoCFOP1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoNCM"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoNCM",
+              "nativeQueryRef": "ProdutoNCM1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "ProdutoCEST"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.ProdutoCEST",
+              "nativeQueryRef": "ProdutoCEST1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "IcmsAliquota"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.IcmsAliquota",
+              "nativeQueryRef": "IcmsAliquota1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "IcmsValor"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.IcmsValor",
+              "nativeQueryRef": "IcmsValor1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "PisAliquota"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.PisAliquota",
+              "nativeQueryRef": "PisAliquota1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "PisValor"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.PisValor",
+              "nativeQueryRef": "PisValor1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "CofinsAliquota"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.CofinsAliquota",
+              "nativeQueryRef": "CofinsAliquota1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "CofinsValor"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.CofinsValor",
+              "nativeQueryRef": "CofinsValor1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "XMLs_BriandDoceria"
+                    }
+                  },
+                  "Property": "NotaChave"
+                }
+              },
+              "queryRef": "XMLs_BriandDoceria.NotaChave",
+              "nativeQueryRef": "NotaChave"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.NotaFederacao"
+          }
+        },
+        {
+          "properties": {
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.NotaModelo"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.NotaSerie"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.NotaNumero"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.NotaEmissao"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoItem"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoCodigo"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoQuantidade"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoUnidade"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoDescricao"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoValor"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoCFOP"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoNCM"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.ProdutoCEST"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.IcmsAliquota"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.IcmsValor"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.PisAliquota"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.PisValor"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.CofinsAliquota"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.CofinsValor"
+          }
+        },
+        {
+          "properties": {
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleTotal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "XMLs_BriandDoceria.NotaChave"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "04b9cea4edde9b0b8d72",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "NotaFederacao"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1a291c207734040725e8",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "NotaModelo"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "78799429b46c123b1c74",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "NotaSerie"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c99dfaaeab13077d6a76",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "NotaNumero"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "35036e09b212a0c9ac4e",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "NotaEmissao"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "39a857070e61d2957d66",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoItem"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3dc68a57a07d57d4e605",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoCodigo"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e86fdc0e129108743ad5",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoQuantidade"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c3168dd08c0180708ead",
+        "ordinal": 8,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoUnidade"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "457a85d82de7304052c9",
+        "ordinal": 9,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoDescricao"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d32cfb444be2ebd007b9",
+        "ordinal": 10,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoValor"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cebb28d261b71701ebeb",
+        "ordinal": 11,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoCFOP"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d6e7ce5da3a4c706d278",
+        "ordinal": 12,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoNCM"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3c429cac876bb21691d0",
+        "ordinal": 13,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "ProdutoCEST"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cb779cc3072a702b095e",
+        "ordinal": 14,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "IcmsAliquota"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d532a9881b38b244c7bd",
+        "ordinal": 15,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "IcmsValor"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "70e7ec3fee3261a4040c",
+        "ordinal": 16,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "PisAliquota"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9b7aef61d1120922a58c",
+        "ordinal": 17,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "PisValor"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fc8fd45f003c5bb16480",
+        "ordinal": 18,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "CofinsAliquota"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "78a58722629503264dc1",
+        "ordinal": 19,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "CofinsValor"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "43ab90b8bb870ad22042",
+        "ordinal": 20,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "XMLs_BriandDoceria"
+              }
+            },
+            "Property": "NotaChave"
+          }
+        },
+        "type": "Categorical"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}
