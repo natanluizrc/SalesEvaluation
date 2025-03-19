@@ -1,0 +1,338 @@
+table XMLs_BriandDoceria
+	lineageTag: 0033dffc-0a1f-4d53-ab25-7ec80da63dee
+
+	measure 00a_EmitenteCNPJ = ```
+			
+			
+			VAR CNPJNum = SUBSTITUTE( SELECTEDVALUE(XMLs_BriandDoceria[EmitenteCNPJ]), ".", "" ) // Remove pontos
+			VAR CNPJNum1 = SUBSTITUTE( CNPJNum, "/", "" ) // Remove barras
+			VAR CNPJNum2 = SUBSTITUTE( CNPJNum1, "-", "" ) // Remove traços
+			
+			RETURN 
+			    IF(
+			        LEN(CNPJNum2) = 14,
+			        LEFT(CNPJNum2,2) & "." & MID(CNPJNum2,3,3) & "." & MID(CNPJNum2,6,3) & "/" & MID(CNPJNum2,9,4) & "-" & RIGHT(CNPJNum2,2),
+			        CNPJNum2 // Retorna o valor original se não tiver 14 dígitos
+			    )
+			
+			```
+		lineageTag: 2e9cf8fc-f88e-4437-a712-c2aae9e7b818
+
+	measure 00b_EmitenteIE = ```
+			
+			
+			VAR IENum = SUBSTITUTE( SELECTEDVALUE(XMLs_BriandDoceria[EmitenteIE]), ".", "" ) // Remove pontos
+			VAR IENum1 = SUBSTITUTE( IENum, "/", "" ) // Remove barras
+			VAR IENum2 = SUBSTITUTE( IENum1, "-", "" ) // Remove traços
+			
+			RETURN 
+			    IF(
+			        LEN(IENum2) >= 9 && LEN(IENum2) <= 12,
+			        LEFT(IENum2,3) & "." & MID(IENum2,4,3) & "." & RIGHT(IENum2,LEN(IENum2)-6),
+			        IENum2 // Retorna o valor original se não estiver no intervalo esperado
+			    )
+			
+			```
+		lineageTag: 0768bd2a-93df-4077-a16d-0808a49b08d2
+
+	measure 00c_EmitenteRazao = ```
+			
+			
+			VAR EmitenteRazao = FIRSTNONBLANK(XMLs_BriandDoceria[EmitenteRazao], "")
+			
+			RETURN 
+			    EmitenteRazao
+			
+			```
+		lineageTag: 4102bc67-7119-42b0-b1f5-2a42cba49689
+
+	measure 01_QtdNotas = DISTINCTCOUNT(XMLs_BriandDoceria[NotaNumero])
+		formatString: #,0
+		lineageTag: b8ab429a-3c95-438b-a351-6524a39304cd
+
+	measure 02_QtdItens = COUNT(XMLs_BriandDoceria[NotaNumero])
+		formatString: #,0
+		lineageTag: a7d6b3ee-84d3-4175-a12f-131c1dc34475
+
+	measure 03_VlrProdutos = SUM ( XMLs_BriandDoceria[ProdutoValor] )
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 45ebe27e-e134-417c-b451-0a792c89dc2e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 04_VlrNotas = ```
+			
+			    SUMX(
+			        VALUES(XMLs_BriandDoceria[NotaNumero]),
+			        FIRSTNONBLANK(XMLs_BriandDoceria[NotaValor], 1)
+			    )
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b8632d7c-cae5-4056-b31b-1b3cbd498489
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column NotaFederacao
+		dataType: string
+		lineageTag: 9bb127cb-9b88-4d70-bd83-b779d8c470a9
+		summarizeBy: none
+		sourceColumn: NotaFederacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column NotaModelo
+		dataType: string
+		lineageTag: 35ceb95c-cb8b-40e4-a317-f9123ce8af5c
+		summarizeBy: none
+		sourceColumn: NotaModelo
+
+		annotation SummarizationSetBy = Automatic
+
+	column NotaSerie
+		dataType: string
+		lineageTag: 31be6a94-4c9d-40a7-a6cb-551fd48bc527
+		summarizeBy: none
+		sourceColumn: NotaSerie
+
+		annotation SummarizationSetBy = Automatic
+
+	column NotaNumero
+		dataType: string
+		lineageTag: a4fdf189-672f-41e1-bbde-eca44776bc55
+		summarizeBy: none
+		sourceColumn: NotaNumero
+
+		annotation SummarizationSetBy = Automatic
+
+	column NotaEmissao
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 77841701-2d3f-4cfe-8134-dfabaee25fed
+		summarizeBy: none
+		sourceColumn: NotaEmissao
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmitenteCNPJ
+		dataType: string
+		lineageTag: 76dc9f3d-1cc9-425f-9533-725d8d675e48
+		summarizeBy: none
+		sourceColumn: EmitenteCNPJ
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmitenteIE
+		dataType: string
+		lineageTag: 1f05c486-5a6c-4016-865f-0774cfee71e0
+		summarizeBy: none
+		sourceColumn: EmitenteIE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmitenteRazao
+		dataType: string
+		lineageTag: ebaa9378-275f-4fcf-9f79-a43c30c3ef6a
+		summarizeBy: none
+		sourceColumn: EmitenteRazao
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmitenteFantasia
+		dataType: string
+		lineageTag: 069c80b9-b47f-4a9e-9e6f-508afafc8da8
+		summarizeBy: none
+		sourceColumn: EmitenteFantasia
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoItem
+		dataType: string
+		lineageTag: 1179b20f-5025-40b6-aadd-6b70d49687f4
+		summarizeBy: none
+		sourceColumn: ProdutoItem
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoCodigo
+		dataType: string
+		lineageTag: 9c25cbe7-8f3c-431e-8bed-b3b6986a5ea6
+		summarizeBy: none
+		sourceColumn: ProdutoCodigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoDescricao
+		dataType: string
+		lineageTag: dcb93d76-dfc3-4976-869b-a59f5a387583
+		summarizeBy: none
+		sourceColumn: ProdutoDescricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoNCM
+		dataType: string
+		lineageTag: dc5f2bc1-d633-4872-8d0a-d115a24633ba
+		summarizeBy: none
+		sourceColumn: ProdutoNCM
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoCEST
+		dataType: string
+		lineageTag: 8c9b625e-bac6-4100-9671-2c5e9c7a127b
+		summarizeBy: none
+		sourceColumn: ProdutoCEST
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoCFOP
+		dataType: string
+		lineageTag: 714565dc-0e21-4ae4-8ce1-8feb358da1cc
+		summarizeBy: none
+		sourceColumn: ProdutoCFOP
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoQuantidade
+		dataType: double
+		lineageTag: 6c571c6e-24ef-40ec-bd6c-ea6ddbe8bf2d
+		summarizeBy: none
+		sourceColumn: ProdutoQuantidade
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ProdutoUnidade
+		dataType: string
+		lineageTag: 82dd7c2d-f41e-4e50-b7d1-a37424793b8f
+		summarizeBy: none
+		sourceColumn: ProdutoUnidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProdutoValor
+		dataType: double
+		lineageTag: 7d67f73f-b770-4947-9e72-ae68e773b12f
+		summarizeBy: none
+		sourceColumn: ProdutoValor
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IcmsAliquota
+		dataType: double
+		lineageTag: 9c7f7144-63eb-40ad-ad01-69ac590184aa
+		summarizeBy: none
+		sourceColumn: IcmsAliquota
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IcmsValor
+		dataType: double
+		lineageTag: 49580159-7dce-4e85-8ab6-92c8c3e3a6a1
+		summarizeBy: none
+		sourceColumn: IcmsValor
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PisAliquota
+		dataType: double
+		lineageTag: 2ac7268e-a3d8-496e-9545-2e6c41311006
+		summarizeBy: none
+		sourceColumn: PisAliquota
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PisValor
+		dataType: double
+		lineageTag: 432530b5-9f38-45b3-b201-ed64b4cdaefd
+		summarizeBy: none
+		sourceColumn: PisValor
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CofinsAliquota
+		dataType: double
+		lineageTag: e2cc1393-48c5-4e05-a653-f39f1a4841ae
+		summarizeBy: none
+		sourceColumn: CofinsAliquota
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CofinsValor
+		dataType: double
+		lineageTag: fb98c713-6f07-4ce6-88a5-21eba643a8d0
+		summarizeBy: none
+		sourceColumn: CofinsValor
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NotaValor
+		dataType: double
+		lineageTag: 8962c911-cf9b-4344-92ab-053d006febcd
+		summarizeBy: none
+		sourceColumn: NotaValor
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NotaPagamento
+		dataType: string
+		lineageTag: 22d044e2-14a8-4d42-9e2a-43674a1bda94
+		summarizeBy: none
+		sourceColumn: NotaPagamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column NotaChave
+		dataType: string
+		lineageTag: 7628aec5-7cec-4cf2-8446-19a895c941cd
+		summarizeBy: none
+		sourceColumn: NotaChave
+
+		annotation SummarizationSetBy = Automatic
+
+	column NotaStatus
+		dataType: string
+		lineageTag: 5153084e-e663-43fe-815c-471bc68bd7f4
+		summarizeBy: none
+		sourceColumn: NotaStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column NotaMotivo
+		dataType: string
+		lineageTag: c739b4b3-7a2a-4f57-a33b-bf94f79565c1
+		summarizeBy: none
+		sourceColumn: NotaMotivo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition XMLs_BriandDoceria = m
+		mode: import
+		queryGroup: 'Tabela Consolidada'
+		source =
+				let
+				    Fonte = Table.Combine({XMLs_BriandDoceria_202401, XMLs_BriandDoceria_202402, XMLs_BriandDoceria_202403, XMLs_BriandDoceria_202404, XMLs_BriandDoceria_202405, XMLs_BriandDoceria_202406, XMLs_BriandDoceria_202407, XMLs_BriandDoceria_202408, XMLs_BriandDoceria_202409})
+				in
+				    Fonte
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
