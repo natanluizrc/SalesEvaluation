@@ -1,0 +1,1660 @@
+table '(Tab) Query'
+	lineageTag: 8df5c9e1-1140-4640-b4e7-5369a061f05b
+
+	column Name
+		dataType: string
+		lineageTag: 4aa751dc-2310-4cf4-92c7-d6ae6d67c06b
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Extension
+		dataType: string
+		lineageTag: 63fbfff1-33ad-4309-8f11-7b81bf7f618e
+		summarizeBy: none
+		sourceColumn: Extension
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date accessed'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1df698d0-409a-4ce5-8deb-57780383d49f
+		summarizeBy: none
+		sourceColumn: Date accessed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date modified'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 12f9e1a5-c355-45c0-9bbb-e0311dabb5f4
+		summarizeBy: none
+		sourceColumn: Date modified
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date created'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3645d9e5-440c-433a-9ce3-3bc9976d99ad
+		summarizeBy: none
+		sourceColumn: Date created
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Attributes.Size'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b8aff96-d7b2-4f10-8554-c7c97b49e455
+		summarizeBy: none
+		sourceColumn: Attributes.Size
+
+		annotation SummarizationSetBy = User
+
+	column 'Attributes.Content Type'
+		dataType: string
+		lineageTag: 1542de36-a6c0-449f-9cf4-58dd1f9f3c2c
+		summarizeBy: none
+		sourceColumn: Attributes.Content Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Attributes.Kind'
+		dataType: string
+		lineageTag: e99022a4-599e-479f-96e1-8599a2995d3d
+		summarizeBy: none
+		sourceColumn: Attributes.Kind
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Folder Path'
+		dataType: string
+		lineageTag: 5440c884-e909-4ffd-bed2-088bb7583c27
+		summarizeBy: none
+		sourceColumn: Folder Path
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.ide.cUF'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1cdebe69-e953-448b-92d3-138c8078cea9
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.cUF
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.cNF'
+		dataType: int64
+		formatString: 0
+		lineageTag: 419344f4-cc88-42c8-b286-dbc57c021b04
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.cNF
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.natOp'
+		dataType: string
+		lineageTag: 654221d0-e892-4080-bd5c-9bc90615e436
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.natOp
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.ide.mod'
+		dataType: int64
+		formatString: 0
+		lineageTag: 10f35909-319f-460c-8d50-8285aba8926e
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.mod
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.serie'
+		dataType: int64
+		formatString: 0
+		lineageTag: a3676288-0546-449b-9ebd-16c9d807d1dc
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.serie
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.nNF'
+		dataType: int64
+		formatString: 0
+		lineageTag: ecc894a2-5b3b-41a2-aa69-1933ac822c34
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.nNF
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.dhEmi'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b91e18b1-9834-4d86-987f-171b4e81ba5a
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.dhEmi
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.ide.tpNF'
+		dataType: int64
+		formatString: 0
+		lineageTag: 84d7b8f9-21a7-4558-88d7-95d68127babe
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.tpNF
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.idDest'
+		dataType: int64
+		formatString: 0
+		lineageTag: cae07e4d-8c94-4c0f-89e3-739ccfd96589
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.idDest
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.cMunFG'
+		dataType: int64
+		formatString: 0
+		lineageTag: d9567033-0b23-46c1-a922-74497538c06b
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.cMunFG
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.tpImp'
+		dataType: int64
+		formatString: 0
+		lineageTag: cf5911f1-59a7-4703-8e04-28e510b64ef4
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.tpImp
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.tpEmis'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1512394a-c4f5-4265-b702-023ca13b228f
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.tpEmis
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.cDV'
+		dataType: int64
+		formatString: 0
+		lineageTag: 22d5893a-39ab-49a1-a94e-c61b844403de
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.cDV
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.tpAmb'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2a4f3f19-271e-420a-9e8e-c6ae6a9009b4
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.tpAmb
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.finNFe'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c54e677-17d8-45c3-a673-6dcea72b193f
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.finNFe
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.indFinal'
+		dataType: int64
+		formatString: 0
+		lineageTag: 05fa6f56-11c0-4d0d-879c-e869786ce2c8
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.indFinal
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.indPres'
+		dataType: int64
+		formatString: 0
+		lineageTag: 56de2ca5-161c-4b1a-a4dc-603ff99f5e1e
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.indPres
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.procEmi'
+		dataType: int64
+		formatString: 0
+		lineageTag: f893d376-4bab-465e-a232-2f30e7f74c80
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.procEmi
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.ide.verProc'
+		dataType: string
+		lineageTag: 0a50d216-c831-4bbc-b1e8-2ec458e40f01
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.ide.verProc
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.emit.CNPJ'
+		dataType: int64
+		formatString: 0
+		lineageTag: a5453e72-3d41-4679-956e-28ba16d21dbd
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.CNPJ
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.emit.xNome'
+		dataType: string
+		lineageTag: 1f6f6a9f-ce37-4211-985c-b2c6a45c8961
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.xNome
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.emit.xFant'
+		dataType: string
+		lineageTag: 62698c38-e89f-4c61-a59e-ea3e67d1974e
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.xFant
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.emit.enderEmit.xLgr'
+		dataType: string
+		lineageTag: f6b5f8f3-e2e8-47d9-a31e-86f75c945246
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.enderEmit.xLgr
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.emit.enderEmit.nro'
+		dataType: int64
+		formatString: 0
+		lineageTag: e69f8c73-78a0-4ec7-b3bf-e5507cd267a4
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.enderEmit.nro
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.emit.enderEmit.xBairro'
+		dataType: string
+		lineageTag: fbc1c492-a45d-4302-8999-0b148962fe45
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.enderEmit.xBairro
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.emit.enderEmit.cMun'
+		dataType: int64
+		formatString: 0
+		lineageTag: b4186bd7-d2c1-47de-b583-510698a81254
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.enderEmit.cMun
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.emit.enderEmit.xMun'
+		dataType: string
+		lineageTag: b14e19c4-f3bf-452b-bc7b-4d89c78e43cd
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.enderEmit.xMun
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.emit.enderEmit.UF'
+		dataType: string
+		lineageTag: 353c2e9e-7548-43a3-9b70-1e7435db36c6
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.enderEmit.UF
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.emit.enderEmit.CEP'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ce4cd7b-c315-4639-ab72-33f43702182d
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.enderEmit.CEP
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.emit.IE'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ef54506-cc77-423a-8428-c7fa46710589
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.IE
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.emit.CRT'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ab144dd-943f-4242-a321-3d5c1e96601f
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.emit.CRT
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.cProd'
+		dataType: int64
+		formatString: 0
+		lineageTag: ed83ea8e-8799-4ea3-90f7-bf4ad3e30fad
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.cProd
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.cEAN'
+		dataType: string
+		lineageTag: 39c8d4b9-2898-408f-ac8b-1bd933b62902
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.cEAN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.det.prod.xProd'
+		dataType: string
+		lineageTag: 0f724865-09bb-465a-a98f-06144dd5f8df
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.xProd
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.det.prod.NCM'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e62137b-e58c-4981-9ac2-0fdfc973fffe
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.NCM
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.CEST'
+		dataType: int64
+		formatString: 0
+		lineageTag: f351d6c4-8f2f-4623-a624-28c0a052ba65
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.CEST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.CFOP'
+		dataType: int64
+		formatString: 0
+		lineageTag: a0f65b7b-7708-4879-83af-39af3e5d91b5
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.CFOP
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.uCom'
+		dataType: string
+		lineageTag: 00b6f8f0-050c-4f6e-b8fa-683697b3e91a
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.uCom
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.det.prod.qCom'
+		dataType: int64
+		formatString: 0
+		lineageTag: 608c095e-5194-4ea8-84d8-ba56ccbcb637
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.qCom
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.vUnCom'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1cdc26e5-3d5b-4b98-9fe2-75269c51a26e
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.vUnCom
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.vProd'
+		dataType: int64
+		formatString: 0
+		lineageTag: d1385a58-cf96-4db4-8c4c-d5f9079aa76f
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.vProd
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.cEANTrib'
+		dataType: string
+		lineageTag: 996a2f27-421a-465a-b973-82fff2bc8d49
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.cEANTrib
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.det.prod.uTrib'
+		dataType: string
+		lineageTag: 43c424a5-a6b8-4efb-b26a-0aae477a9e5f
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.uTrib
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFe.det.prod.qTrib'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ecfe1cc-c51c-4411-bbc2-006e66852bcd
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.qTrib
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.vUnTrib'
+		dataType: int64
+		formatString: 0
+		lineageTag: a83c9593-d6af-4ed0-9600-c8e1433f72ee
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.vUnTrib
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.prod.indTot'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1483a0c9-410c-42b8-8b48-f2930f4c7848
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.prod.indTot
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.vTotTrib'
+		dataType: int64
+		formatString: 0
+		lineageTag: dfcca082-01bd-4bd6-9eea-447d4e78dd5c
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.vTotTrib
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS60.orig'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8338a3c0-5fb8-4293-a875-eb29edfd5fe0
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS60.orig
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS60.CST'
+		dataType: int64
+		formatString: 0
+		lineageTag: acc4bb95-1b14-480f-bede-7c276c83deca
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS60.CST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS00.orig'
+		dataType: int64
+		formatString: 0
+		lineageTag: b45b5109-b44f-4f22-beb4-6457d87ef020
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS00.orig
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS00.CST'
+		dataType: int64
+		formatString: 0
+		lineageTag: 71701134-7e0c-49e5-83d2-f0e34aacfcbc
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS00.CST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS00.modBC'
+		dataType: int64
+		formatString: 0
+		lineageTag: 951d96c9-87ff-4a31-b5fb-5db567d1eedb
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS00.modBC
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS00.vBC'
+		dataType: int64
+		formatString: 0
+		lineageTag: e0484ea6-f2c5-49a6-bba5-30ede9a4f596
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS00.vBC
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS00.pICMS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4bd2987a-e0b5-4e95-97d4-55886a299bb6
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS00.pICMS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.ICMS.ICMS00.vICMS'
+		dataType: int64
+		formatString: 0
+		lineageTag: cb2f1829-6f57-474d-a3f5-43fddfdf582b
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.ICMS.ICMS00.vICMS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.PIS.PISNT.CST'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3bc97b13-766c-44c9-8cf5-f9b318d60bb7
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.PIS.PISNT.CST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.PIS.PISAliq.CST'
+		dataType: int64
+		formatString: 0
+		lineageTag: cc2f1ef0-d509-4a8a-ab5e-5d8de51b5d22
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.PIS.PISAliq.CST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.PIS.PISAliq.vBC'
+		dataType: int64
+		formatString: 0
+		lineageTag: 12ff46dd-6c30-46e5-a1ea-bd2595a67814
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.PIS.PISAliq.vBC
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.PIS.PISAliq.pPIS'
+		dataType: int64
+		formatString: 0
+		lineageTag: a2f87237-3cd9-4839-bf56-a09162988a21
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.PIS.PISAliq.pPIS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.PIS.PISAliq.vPIS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7cc0bc61-e2f1-4b6f-af91-c7ae8adfbd61
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.PIS.PISAliq.vPIS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.COFINS.COFINSNT.CST'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bd71547-3a97-440a-8fcc-6cd859a516da
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.COFINS.COFINSNT.CST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.COFINS.COFINSAliq.CST'
+		dataType: int64
+		formatString: 0
+		lineageTag: 34b9fafc-4dfc-47ac-a962-3d502598fc8c
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.COFINS.COFINSAliq.CST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.COFINS.COFINSAliq.vBC'
+		dataType: int64
+		formatString: 0
+		lineageTag: e4869d4d-d90f-4217-9880-a91a55c5fe57
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.COFINS.COFINSAliq.vBC
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.COFINS.COFINSAliq.pCOFINS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 67b091f1-c158-4d79-8c71-1115e29efecd
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.COFINS.COFINSAliq.pCOFINS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.imposto.COFINS.COFINSAliq.vCOFINS'
+		dataType: int64
+		formatString: 0
+		lineageTag: d39b4193-ecce-4fcf-a9f5-639d3d83abf8
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.imposto.COFINS.COFINSAliq.vCOFINS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.det.Attribute:nItem'
+		dataType: int64
+		formatString: 0
+		lineageTag: ca50e759-61cb-48e9-9f9e-40ab426cf2d5
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.det.Attribute:nItem
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vBC'
+		dataType: int64
+		formatString: 0
+		lineageTag: eab60eea-499a-4d21-9eff-3443f1de145d
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vBC
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vICMS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 51d86209-7916-43d0-847d-73551955da02
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vICMS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vICMSDeson'
+		dataType: int64
+		formatString: 0
+		lineageTag: 64de569c-44bc-45f1-a117-a967340e71c0
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vICMSDeson
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vFCP'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9de5cf8a-2a98-47e6-9b58-e74cfe6e46cd
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vFCP
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vBCST'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e53b715-14d0-4d5c-ac42-41fae4d87941
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vBCST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vST'
+		dataType: int64
+		formatString: 0
+		lineageTag: d39c2a7c-ffbd-4166-bb85-e08dc8aec54f
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vFCPST'
+		dataType: int64
+		formatString: 0
+		lineageTag: ebd4821f-bc11-4d65-8840-552436dd9a7e
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vFCPST
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vFCPSTRet'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9759990e-a304-4f2b-805c-0d0295a2dd55
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vFCPSTRet
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vProd'
+		dataType: int64
+		formatString: 0
+		lineageTag: c724565e-17f8-4122-b9d6-1688e405b3b0
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vProd
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vFrete'
+		dataType: int64
+		formatString: 0
+		lineageTag: c58c795c-e228-4b87-8b5b-53e92c877c82
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vFrete
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vSeg'
+		dataType: int64
+		formatString: 0
+		lineageTag: f3dbc123-b674-4575-87cd-ef0c6ae90125
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vSeg
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vDesc'
+		dataType: int64
+		formatString: 0
+		lineageTag: d9cb359e-d606-4ec7-91b4-196c819f64a2
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vDesc
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vII'
+		dataType: int64
+		formatString: 0
+		lineageTag: 84fc79b7-adb9-463e-934b-1410ca21bc15
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vII
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vIPI'
+		dataType: int64
+		formatString: 0
+		lineageTag: fbb41bcd-ba8a-4db9-ba66-196ae652b227
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vIPI
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vIPIDevol'
+		dataType: int64
+		formatString: 0
+		lineageTag: 955e871c-5dac-43e6-aa95-6d424b5e539b
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vIPIDevol
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vPIS'
+		dataType: int64
+		formatString: 0
+		lineageTag: af04f193-11d5-4840-a130-cdf8c2896a3c
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vPIS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vCOFINS'
+		dataType: int64
+		formatString: 0
+		lineageTag: 690a5a16-2f2d-42bc-bcb5-9e4cbf434ea0
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vCOFINS
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vOutro'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3dc69035-7e82-4f38-8b93-4d94875998c1
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vOutro
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vNF'
+		dataType: int64
+		formatString: 0
+		lineageTag: a6891216-5972-4b32-bfd7-0a0b95f0184a
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vNF
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.total.ICMSTot.vTotTrib'
+		dataType: int64
+		formatString: 0
+		lineageTag: e2bc7c8b-007e-44f5-9690-0c3e8d62fce3
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.total.ICMSTot.vTotTrib
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.transp.modFrete'
+		dataType: int64
+		formatString: 0
+		lineageTag: b869c73b-95ba-4d46-9b78-7a6107b03cba
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.transp.modFrete
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.pag.detPag.tPag'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4cdb1944-5b46-43f2-a3d0-8dcb8213979c
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.pag.detPag.tPag
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.pag.detPag.vPag'
+		dataType: int64
+		formatString: 0
+		lineageTag: c28e2ddd-01f0-45dc-8285-9d4831c2b28c
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.pag.detPag.vPag
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.pag.detPag.card.tpIntegra'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e305998-4f6c-4d88-967b-a8ff7c48606b
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.pag.detPag.card.tpIntegra
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.pag.vTroco'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4b376517-0910-4d86-8e33-5eb654f5d73b
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.pag.vTroco
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.Attribute:versao'
+		dataType: int64
+		formatString: 0
+		lineageTag: 75ca2e08-0052-4f3e-b675-41ca52d5c936
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.Attribute:versao
+
+		annotation SummarizationSetBy = User
+
+	column 'NFe.infNFe.Attribute:Id'
+		dataType: string
+		lineageTag: b33862e2-d840-406f-95bc-eb01eca5b3d8
+		summarizeBy: none
+		sourceColumn: NFe.infNFe.Attribute:Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFeSupl.qrCode'
+		dataType: string
+		lineageTag: 2b5a841e-3c75-473b-9e67-f2f40a4d348d
+		summarizeBy: none
+		sourceColumn: NFe.infNFeSupl.qrCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.infNFeSupl.urlChave'
+		dataType: string
+		lineageTag: 58014d41-fd7b-472e-a700-b7610fbcf473
+		summarizeBy: none
+		sourceColumn: NFe.infNFeSupl.urlChave
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMe.1'
+		dataType: string
+		lineageTag: 8d4350e6-ae66-4e78-8366-a3d3c5f2ec5e
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMe.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod.Attr'
+		dataType: string
+		lineageTag: 2d9bdd05-0bc5-45ea-82d4-5e7dbd774701
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod.Attr
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.2'
+		dataType: string
+		lineageTag: b920c24f-fa73-40ff-a56a-5ff01a83f1b4
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMe.1'
+		dataType: string
+		lineageTag: 4899839b-77ee-4305-9bb3-af8ea4050feb
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMe.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestValu'
+		dataType: string
+		lineageTag: f20280f1-3f78-4a63-bf48-fcd3b4eb5955
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestValu
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Attribute:'
+		dataType: string
+		lineageTag: cc71446b-6c56-4dad-bd52-bddf24d95da5
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Attribute:
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignatureValue'
+		dataType: string
+		lineageTag: 5275c5b4-0d64-4944-bb10-12e7399142f8
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignatureValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data.X509Certificat'
+		dataType: string
+		lineageTag: fb580dd5-0e40-46ce-a64e-dbfe503d2af1
+		summarizeBy: none
+		sourceColumn: NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data.X509Certificat
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'protNFe.infProt.tpAmb'
+		dataType: int64
+		formatString: 0
+		lineageTag: bb49d084-bdca-470c-b524-cfbacfab2ea6
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.tpAmb
+
+		annotation SummarizationSetBy = User
+
+	column 'protNFe.infProt.verAplic'
+		dataType: string
+		lineageTag: 3f6a6e0a-8154-453e-8410-5e5384298e51
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.verAplic
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'protNFe.infProt.chNFe'
+		dataType: double
+		lineageTag: 36697f39-59a8-4855-8368-856779504a7d
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.chNFe
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'protNFe.infProt.dhRecbto'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8c47adbc-246c-468b-b952-744b137f8072
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.dhRecbto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'protNFe.infProt.nProt'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9a771a70-dff5-401b-9202-1f843d356ea0
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.nProt
+
+		annotation SummarizationSetBy = User
+
+	column 'protNFe.infProt.digVal'
+		dataType: string
+		lineageTag: 28fa86b3-e6c2-437e-a4de-5b8f0fa07d2e
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.digVal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'protNFe.infProt.cStat'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4cddc915-9d1e-4f83-bc30-2dc08b430e5c
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.cStat
+
+		annotation SummarizationSetBy = User
+
+	column 'protNFe.infProt.xMotivo'
+		dataType: string
+		lineageTag: 5a4d6859-4e39-4d17-b3c9-1f1d2b0ef68a
+		summarizeBy: none
+		sourceColumn: protNFe.infProt.xMotivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'protNFe.Attribute:versao'
+		dataType: int64
+		formatString: 0
+		lineageTag: 49257693-984e-4c96-ac3f-91236fb9dae3
+		summarizeBy: none
+		sourceColumn: protNFe.Attribute:versao
+
+		annotation SummarizationSetBy = User
+
+	column Attribute:versao
+		dataType: int64
+		formatString: 0
+		lineageTag: 39b6d27b-31fa-4990-96d3-3046ad17888a
+		summarizeBy: none
+		sourceColumn: Attribute:versao
+
+		annotation SummarizationSetBy = User
+
+	partition '(Tab) Query' = m
+		mode: import
+		source =
+				let
+				  FonteDados = SharePoint.Contents(Site, [ApiVersion = 15]){[Name = "Documentos Compartilhados"]}[Content]{[Name = "XMLs"]}[Content]{[Name = "BriandDoceria"]}[Content]{[Name = "2024"]}[Content]{[Name = Pasta]}[Content],
+				  LinhasFiltradas = Table.SelectRows(FonteDados, each ([Extension] = ".xml")),
+				  #"Attributes Expandido" = Table.ExpandRecordColumn(
+				    LinhasFiltradas,
+				    "Attributes",
+				    {"Size", "Content Type", "Kind"},
+				    {"Attributes.Size", "Attributes.Content Type", "Attributes.Kind"}
+				  ),
+				  FunçãoInvocada = Table.AddColumn(
+				    #"Attributes Expandido",
+				    "",
+				    each #"(Fun) Query"([Content])
+				  ),
+				  ColunasRemovidas = Table.RemoveColumns(FunçãoInvocada, {"Content"}),
+				  #"Consulta Expandido" = Table.ExpandTableColumn(
+				    ColunasRemovidas,
+				    "",
+				    {"NFe", "protNFe", "Attribute:versao"},
+				    {"NFe", "protNFe", "Attribute:versao"}
+				  ),
+				  #"NFe Expandido" = Table.ExpandTableColumn(
+				    #"Consulta Expandido",
+				    "NFe",
+				    {"infNFe", "infNFeSupl", "http://www.w3.org/2000/09/xmldsig#"},
+				    {"NFe.infNFe", "NFe.infNFeSupl", "NFe.http://www.w3.org/2000/09/xmldsig#"}
+				  ),
+				  #"NFe.infNFe Expandido" = Table.ExpandTableColumn(
+				    #"NFe Expandido",
+				    "NFe.infNFe",
+				    {"ide", "emit", "det", "total", "transp", "pag", "Attribute:versao", "Attribute:Id"},
+				    {
+				      "NFe.infNFe.ide",
+				      "NFe.infNFe.emit",
+				      "NFe.infNFe.det",
+				      "NFe.infNFe.total",
+				      "NFe.infNFe.transp",
+				      "NFe.infNFe.pag",
+				      "NFe.infNFe.Attribute:versao",
+				      "NFe.infNFe.Attribute:Id"
+				    }
+				  ),
+				  #"NFe.infNFe.ide Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe Expandido",
+				    "NFe.infNFe.ide",
+				    {
+				      "cUF",
+				      "cNF",
+				      "natOp",
+				      "mod",
+				      "serie",
+				      "nNF",
+				      "dhEmi",
+				      "tpNF",
+				      "idDest",
+				      "cMunFG",
+				      "tpImp",
+				      "tpEmis",
+				      "cDV",
+				      "tpAmb",
+				      "finNFe",
+				      "indFinal",
+				      "indPres",
+				      "procEmi",
+				      "verProc"
+				    },
+				    {
+				      "NFe.infNFe.ide.cUF",
+				      "NFe.infNFe.ide.cNF",
+				      "NFe.infNFe.ide.natOp",
+				      "NFe.infNFe.ide.mod",
+				      "NFe.infNFe.ide.serie",
+				      "NFe.infNFe.ide.nNF",
+				      "NFe.infNFe.ide.dhEmi",
+				      "NFe.infNFe.ide.tpNF",
+				      "NFe.infNFe.ide.idDest",
+				      "NFe.infNFe.ide.cMunFG",
+				      "NFe.infNFe.ide.tpImp",
+				      "NFe.infNFe.ide.tpEmis",
+				      "NFe.infNFe.ide.cDV",
+				      "NFe.infNFe.ide.tpAmb",
+				      "NFe.infNFe.ide.finNFe",
+				      "NFe.infNFe.ide.indFinal",
+				      "NFe.infNFe.ide.indPres",
+				      "NFe.infNFe.ide.procEmi",
+				      "NFe.infNFe.ide.verProc"
+				    }
+				  ),
+				  #"NFe.infNFe.emit Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.ide Expandido",
+				    "NFe.infNFe.emit",
+				    {"CNPJ", "xNome", "xFant", "enderEmit", "IE", "CRT"},
+				    {
+				      "NFe.infNFe.emit.CNPJ",
+				      "NFe.infNFe.emit.xNome",
+				      "NFe.infNFe.emit.xFant",
+				      "NFe.infNFe.emit.enderEmit",
+				      "NFe.infNFe.emit.IE",
+				      "NFe.infNFe.emit.CRT"
+				    }
+				  ),
+				  #"NFe.infNFe.emit.enderEmit Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.emit Expandido",
+				    "NFe.infNFe.emit.enderEmit",
+				    {"xLgr", "nro", "xBairro", "cMun", "xMun", "UF", "CEP"},
+				    {
+				      "NFe.infNFe.emit.enderEmit.xLgr",
+				      "NFe.infNFe.emit.enderEmit.nro",
+				      "NFe.infNFe.emit.enderEmit.xBairro",
+				      "NFe.infNFe.emit.enderEmit.cMun",
+				      "NFe.infNFe.emit.enderEmit.xMun",
+				      "NFe.infNFe.emit.enderEmit.UF",
+				      "NFe.infNFe.emit.enderEmit.CEP"
+				    }
+				  ),
+				  #"NFe.infNFe.det Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.emit.enderEmit Expandido",
+				    "NFe.infNFe.det",
+				    {"prod", "imposto", "Attribute:nItem"},
+				    {"NFe.infNFe.det.prod", "NFe.infNFe.det.imposto", "NFe.infNFe.det.Attribute:nItem"}
+				  ),
+				  #"NFe.infNFe.det.prod Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det Expandido",
+				    "NFe.infNFe.det.prod",
+				    {
+				      "cProd",
+				      "cEAN",
+				      "xProd",
+				      "NCM",
+				      "CEST",
+				      "CFOP",
+				      "uCom",
+				      "qCom",
+				      "vUnCom",
+				      "vProd",
+				      "cEANTrib",
+				      "uTrib",
+				      "qTrib",
+				      "vUnTrib",
+				      "indTot"
+				    },
+				    {
+				      "NFe.infNFe.det.prod.cProd",
+				      "NFe.infNFe.det.prod.cEAN",
+				      "NFe.infNFe.det.prod.xProd",
+				      "NFe.infNFe.det.prod.NCM",
+				      "NFe.infNFe.det.prod.CEST",
+				      "NFe.infNFe.det.prod.CFOP",
+				      "NFe.infNFe.det.prod.uCom",
+				      "NFe.infNFe.det.prod.qCom",
+				      "NFe.infNFe.det.prod.vUnCom",
+				      "NFe.infNFe.det.prod.vProd",
+				      "NFe.infNFe.det.prod.cEANTrib",
+				      "NFe.infNFe.det.prod.uTrib",
+				      "NFe.infNFe.det.prod.qTrib",
+				      "NFe.infNFe.det.prod.vUnTrib",
+				      "NFe.infNFe.det.prod.indTot"
+				    }
+				  ),
+				  #"NFe.infNFe.det.imposto Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.prod Expandido",
+				    "NFe.infNFe.det.imposto",
+				    {"vTotTrib", "ICMS", "PIS", "COFINS"},
+				    {
+				      "NFe.infNFe.det.imposto.vTotTrib",
+				      "NFe.infNFe.det.imposto.ICMS",
+				      "NFe.infNFe.det.imposto.PIS",
+				      "NFe.infNFe.det.imposto.COFINS"
+				    }
+				  ),
+				  #"NFe.infNFe.det.imposto.ICMS Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto Expandido",
+				    "NFe.infNFe.det.imposto.ICMS",
+				    {"ICMS60", "ICMS00"},
+				    {"NFe.infNFe.det.imposto.ICMS.ICMS60", "NFe.infNFe.det.imposto.ICMS.ICMS00"}
+				  ),
+				  #"NFe.infNFe.det.imposto.ICMS.ICMS60 Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.ICMS Expandido",
+				    "NFe.infNFe.det.imposto.ICMS.ICMS60",
+				    {"orig", "CST"},
+				    {"NFe.infNFe.det.imposto.ICMS.ICMS60.orig", "NFe.infNFe.det.imposto.ICMS.ICMS60.CST"}
+				  ),
+				  #"NFe.infNFe.det.imposto.ICMS.ICMS00 Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.ICMS.ICMS60 Expandido",
+				    "NFe.infNFe.det.imposto.ICMS.ICMS00",
+				    {"orig", "CST", "modBC", "vBC", "pICMS", "vICMS"},
+				    {
+				      "NFe.infNFe.det.imposto.ICMS.ICMS00.orig",
+				      "NFe.infNFe.det.imposto.ICMS.ICMS00.CST",
+				      "NFe.infNFe.det.imposto.ICMS.ICMS00.modBC",
+				      "NFe.infNFe.det.imposto.ICMS.ICMS00.vBC",
+				      "NFe.infNFe.det.imposto.ICMS.ICMS00.pICMS",
+				      "NFe.infNFe.det.imposto.ICMS.ICMS00.vICMS"
+				    }
+				  ),
+				  #"NFe.infNFe.det.imposto.PIS Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.ICMS.ICMS00 Expandido",
+				    "NFe.infNFe.det.imposto.PIS",
+				    {"PISNT", "PISAliq"},
+				    {"NFe.infNFe.det.imposto.PIS.PISNT", "NFe.infNFe.det.imposto.PIS.PISAliq"}
+				  ),
+				  #"NFe.infNFe.det.imposto.PIS.PISNT Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.PIS Expandido",
+				    "NFe.infNFe.det.imposto.PIS.PISNT",
+				    {"CST"},
+				    {"NFe.infNFe.det.imposto.PIS.PISNT.CST"}
+				  ),
+				  #"NFe.infNFe.det.imposto.PIS.PISAliq Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.PIS.PISNT Expandido",
+				    "NFe.infNFe.det.imposto.PIS.PISAliq",
+				    {"CST", "vBC", "pPIS", "vPIS"},
+				    {
+				      "NFe.infNFe.det.imposto.PIS.PISAliq.CST",
+				      "NFe.infNFe.det.imposto.PIS.PISAliq.vBC",
+				      "NFe.infNFe.det.imposto.PIS.PISAliq.pPIS",
+				      "NFe.infNFe.det.imposto.PIS.PISAliq.vPIS"
+				    }
+				  ),
+				  #"NFe.infNFe.det.imposto.COFINS Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.PIS.PISAliq Expandido",
+				    "NFe.infNFe.det.imposto.COFINS",
+				    {"COFINSNT", "COFINSAliq"},
+				    {"NFe.infNFe.det.imposto.COFINS.COFINSNT", "NFe.infNFe.det.imposto.COFINS.COFINSAliq"}
+				  ),
+				  #"NFe.infNFe.det.imposto.COFINS.COFINSNT Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.COFINS Expandido",
+				    "NFe.infNFe.det.imposto.COFINS.COFINSNT",
+				    {"CST"},
+				    {"NFe.infNFe.det.imposto.COFINS.COFINSNT.CST"}
+				  ),
+				  #"NFe.infNFe.det.imposto.COFINS.COFINSAliq Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.COFINS.COFINSNT Expandido",
+				    "NFe.infNFe.det.imposto.COFINS.COFINSAliq",
+				    {"CST", "vBC", "pCOFINS", "vCOFINS"},
+				    {
+				      "NFe.infNFe.det.imposto.COFINS.COFINSAliq.CST",
+				      "NFe.infNFe.det.imposto.COFINS.COFINSAliq.vBC",
+				      "NFe.infNFe.det.imposto.COFINS.COFINSAliq.pCOFINS",
+				      "NFe.infNFe.det.imposto.COFINS.COFINSAliq.vCOFINS"
+				    }
+				  ),
+				  #"NFe.infNFe.total Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.det.imposto.COFINS.COFINSAliq Expandido",
+				    "NFe.infNFe.total",
+				    {"ICMSTot"},
+				    {"NFe.infNFe.total.ICMSTot"}
+				  ),
+				  #"NFe.infNFe.total.ICMSTot Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.total Expandido",
+				    "NFe.infNFe.total.ICMSTot",
+				    {
+				      "vBC",
+				      "vICMS",
+				      "vICMSDeson",
+				      "vFCP",
+				      "vBCST",
+				      "vST",
+				      "vFCPST",
+				      "vFCPSTRet",
+				      "vProd",
+				      "vFrete",
+				      "vSeg",
+				      "vDesc",
+				      "vII",
+				      "vIPI",
+				      "vIPIDevol",
+				      "vPIS",
+				      "vCOFINS",
+				      "vOutro",
+				      "vNF",
+				      "vTotTrib"
+				    },
+				    {
+				      "NFe.infNFe.total.ICMSTot.vBC",
+				      "NFe.infNFe.total.ICMSTot.vICMS",
+				      "NFe.infNFe.total.ICMSTot.vICMSDeson",
+				      "NFe.infNFe.total.ICMSTot.vFCP",
+				      "NFe.infNFe.total.ICMSTot.vBCST",
+				      "NFe.infNFe.total.ICMSTot.vST",
+				      "NFe.infNFe.total.ICMSTot.vFCPST",
+				      "NFe.infNFe.total.ICMSTot.vFCPSTRet",
+				      "NFe.infNFe.total.ICMSTot.vProd",
+				      "NFe.infNFe.total.ICMSTot.vFrete",
+				      "NFe.infNFe.total.ICMSTot.vSeg",
+				      "NFe.infNFe.total.ICMSTot.vDesc",
+				      "NFe.infNFe.total.ICMSTot.vII",
+				      "NFe.infNFe.total.ICMSTot.vIPI",
+				      "NFe.infNFe.total.ICMSTot.vIPIDevol",
+				      "NFe.infNFe.total.ICMSTot.vPIS",
+				      "NFe.infNFe.total.ICMSTot.vCOFINS",
+				      "NFe.infNFe.total.ICMSTot.vOutro",
+				      "NFe.infNFe.total.ICMSTot.vNF",
+				      "NFe.infNFe.total.ICMSTot.vTotTrib"
+				    }
+				  ),
+				  #"NFe.infNFe.transp Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.total.ICMSTot Expandido",
+				    "NFe.infNFe.transp",
+				    {"modFrete"},
+				    {"NFe.infNFe.transp.modFrete"}
+				  ),
+				  #"NFe.infNFe.pag Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.transp Expandido",
+				    "NFe.infNFe.pag",
+				    {"detPag", "vTroco"},
+				    {"NFe.infNFe.pag.detPag", "NFe.infNFe.pag.vTroco"}
+				  ),
+				  #"NFe.infNFe.pag.detPag Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.pag Expandido",
+				    "NFe.infNFe.pag.detPag",
+				    {"tPag", "vPag", "card"},
+				    {"NFe.infNFe.pag.detPag.tPag", "NFe.infNFe.pag.detPag.vPag", "NFe.infNFe.pag.detPag.card"}
+				  ),
+				  #"NFe.infNFe.pag.detPag.card Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.pag.detPag Expandido",
+				    "NFe.infNFe.pag.detPag.card",
+				    {"tpIntegra"},
+				    {"NFe.infNFe.pag.detPag.card.tpIntegra"}
+				  ),
+				  #"NFe.infNFeSupl Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFe.pag.detPag.card Expandido",
+				    "NFe.infNFeSupl",
+				    {"qrCode", "urlChave"},
+				    {"NFe.infNFeSupl.qrCode", "NFe.infNFeSupl.urlChave"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig# Expandido" = Table.ExpandTableColumn(
+				    #"NFe.infNFeSupl Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#",
+				    {"Signature"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature Expandido" = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig# Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature",
+				    {"SignedInfo", "SignatureValue", "KeyInfo"},
+				    {
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo",
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignatureValue",
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo"
+				    }
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo Expandido" = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo",
+				    {"CanonicalizationMethod", "SignatureMethod", "Reference"},
+				    {
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMeth",
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod",
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference"
+				    }
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMeth Expandido"
+				    = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMeth",
+				    {"Attribute:Algorithm"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMe.1"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod Expandido"
+				    = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMeth Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod",
+				    {"Attribute:Algorithm"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod.Attr"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference Expandido"
+				    = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference",
+				    {"Transforms", "DigestMethod", "DigestValue", "Attribute:URI"},
+				    {
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transforms",
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMeth",
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestValu",
+				      "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Attribute:"
+				    }
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transforms Expandido"
+				    = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transforms",
+				    {"Transform"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.1"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.1 Expandido"
+				    = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transforms Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.1",
+				    {"Attribute:Algorithm"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.2"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMeth Expandido"
+				    = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.1 Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMeth",
+				    {"Attribute:Algorithm"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMe.1"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo Expandido" = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMeth Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo",
+				    {"X509Data"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data"}
+				  ),
+				  #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data Expandido"
+				    = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo Expandido",
+				    "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data",
+				    {"X509Certificate"},
+				    {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data.X509Certificat"}
+				  ),
+				  #"protNFe Expandido" = Table.ExpandTableColumn(
+				    #"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data Expandido",
+				    "protNFe",
+				    {"infProt", "Attribute:versao"},
+				    {"protNFe.infProt", "protNFe.Attribute:versao"}
+				  ),
+				  #"protNFe.infProt Expandido" = Table.ExpandTableColumn(
+				    #"protNFe Expandido",
+				    "protNFe.infProt",
+				    {"tpAmb", "verAplic", "chNFe", "dhRecbto", "nProt", "digVal", "cStat", "xMotivo"},
+				    {
+				      "protNFe.infProt.tpAmb",
+				      "protNFe.infProt.verAplic",
+				      "protNFe.infProt.chNFe",
+				      "protNFe.infProt.dhRecbto",
+				      "protNFe.infProt.nProt",
+				      "protNFe.infProt.digVal",
+				      "protNFe.infProt.cStat",
+				      "protNFe.infProt.xMotivo"
+				    }
+				  ),
+				  TipoAlterado = Table.TransformColumnTypes(
+				    #"protNFe.infProt Expandido",
+				    {
+				      {"Name", type text},
+				      {"Extension", type text},
+				      {"Date accessed", type datetimezone},
+				      {"Date modified", type datetimezone},
+				      {"Date created", type datetimezone},
+				      {"Attributes.Size", Int64.Type},
+				      {"Attributes.Content Type", type text},
+				      {"Attributes.Kind", type text},
+				      {"Folder Path", type text},
+				      {"NFe.infNFe.ide.cUF", Int64.Type},
+				      {"NFe.infNFe.ide.cNF", Int64.Type},
+				      {"NFe.infNFe.ide.natOp", type text},
+				      {"NFe.infNFe.ide.mod", Int64.Type},
+				      {"NFe.infNFe.ide.serie", Int64.Type},
+				      {"NFe.infNFe.ide.nNF", Int64.Type},
+				      {"NFe.infNFe.ide.dhEmi", type datetimezone},
+				      {"NFe.infNFe.ide.tpNF", Int64.Type},
+				      {"NFe.infNFe.ide.idDest", Int64.Type},
+				      {"NFe.infNFe.ide.cMunFG", Int64.Type},
+				      {"NFe.infNFe.ide.tpImp", Int64.Type},
+				      {"NFe.infNFe.ide.tpEmis", Int64.Type},
+				      {"NFe.infNFe.ide.cDV", Int64.Type},
+				      {"NFe.infNFe.ide.tpAmb", Int64.Type},
+				      {"NFe.infNFe.ide.finNFe", Int64.Type},
+				      {"NFe.infNFe.ide.indFinal", Int64.Type},
+				      {"NFe.infNFe.ide.indPres", Int64.Type},
+				      {"NFe.infNFe.ide.procEmi", Int64.Type},
+				      {"NFe.infNFe.ide.verProc", type text},
+				      {"NFe.infNFe.emit.CNPJ", Int64.Type},
+				      {"NFe.infNFe.emit.xNome", type text},
+				      {"NFe.infNFe.emit.xFant", type text},
+				      {"NFe.infNFe.emit.enderEmit.xLgr", type text},
+				      {"NFe.infNFe.emit.enderEmit.nro", Int64.Type},
+				      {"NFe.infNFe.emit.enderEmit.xBairro", type text},
+				      {"NFe.infNFe.emit.enderEmit.cMun", Int64.Type},
+				      {"NFe.infNFe.emit.enderEmit.xMun", type text},
+				      {"NFe.infNFe.emit.enderEmit.UF", type text},
+				      {"NFe.infNFe.emit.enderEmit.CEP", Int64.Type},
+				      {"NFe.infNFe.emit.IE", Int64.Type},
+				      {"NFe.infNFe.emit.CRT", Int64.Type},
+				      {"NFe.infNFe.det.prod.cProd", Int64.Type},
+				      {"NFe.infNFe.det.prod.cEAN", type text},
+				      {"NFe.infNFe.det.prod.xProd", type text},
+				      {"NFe.infNFe.det.prod.NCM", Int64.Type},
+				      {"NFe.infNFe.det.prod.CEST", Int64.Type},
+				      {"NFe.infNFe.det.prod.CFOP", Int64.Type},
+				      {"NFe.infNFe.det.prod.uCom", type text},
+				      {"NFe.infNFe.det.prod.qCom", Int64.Type},
+				      {"NFe.infNFe.det.prod.vUnCom", Int64.Type},
+				      {"NFe.infNFe.det.prod.vProd", Int64.Type},
+				      {"NFe.infNFe.det.prod.cEANTrib", type text},
+				      {"NFe.infNFe.det.prod.uTrib", type text},
+				      {"NFe.infNFe.det.prod.qTrib", Int64.Type},
+				      {"NFe.infNFe.det.prod.vUnTrib", Int64.Type},
+				      {"NFe.infNFe.det.prod.indTot", Int64.Type},
+				      {"NFe.infNFe.det.imposto.vTotTrib", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS60.orig", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS60.CST", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS00.orig", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS00.CST", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS00.modBC", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS00.vBC", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS00.pICMS", Int64.Type},
+				      {"NFe.infNFe.det.imposto.ICMS.ICMS00.vICMS", Int64.Type},
+				      {"NFe.infNFe.det.imposto.PIS.PISNT.CST", Int64.Type},
+				      {"NFe.infNFe.det.imposto.PIS.PISAliq.CST", Int64.Type},
+				      {"NFe.infNFe.det.imposto.PIS.PISAliq.vBC", Int64.Type},
+				      {"NFe.infNFe.det.imposto.PIS.PISAliq.pPIS", Int64.Type},
+				      {"NFe.infNFe.det.imposto.PIS.PISAliq.vPIS", Int64.Type},
+				      {"NFe.infNFe.det.imposto.COFINS.COFINSNT.CST", Int64.Type},
+				      {"NFe.infNFe.det.imposto.COFINS.COFINSAliq.CST", Int64.Type},
+				      {"NFe.infNFe.det.imposto.COFINS.COFINSAliq.vBC", Int64.Type},
+				      {"NFe.infNFe.det.imposto.COFINS.COFINSAliq.pCOFINS", Int64.Type},
+				      {"NFe.infNFe.det.imposto.COFINS.COFINSAliq.vCOFINS", Int64.Type},
+				      {"NFe.infNFe.det.Attribute:nItem", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vBC", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vICMS", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vICMSDeson", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vFCP", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vBCST", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vST", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vFCPST", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vFCPSTRet", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vProd", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vFrete", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vSeg", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vDesc", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vII", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vIPI", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vIPIDevol", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vPIS", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vCOFINS", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vOutro", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vNF", Int64.Type},
+				      {"NFe.infNFe.total.ICMSTot.vTotTrib", Int64.Type},
+				      {"NFe.infNFe.transp.modFrete", Int64.Type},
+				      {"NFe.infNFe.pag.detPag.tPag", Int64.Type},
+				      {"NFe.infNFe.pag.detPag.vPag", Int64.Type},
+				      {"NFe.infNFe.pag.detPag.card.tpIntegra", Int64.Type},
+				      {"NFe.infNFe.pag.vTroco", Int64.Type},
+				      {"NFe.infNFe.Attribute:versao", Int64.Type},
+				      {"NFe.infNFe.Attribute:Id", type text},
+				      {"NFe.infNFeSupl.qrCode", type text},
+				      {"NFe.infNFeSupl.urlChave", type text},
+				      {
+				        "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.CanonicalizationMe.1",
+				        type text
+				      },
+				      {
+				        "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.SignatureMethod.Attr",
+				        type text
+				      },
+				      {
+				        "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Transfor.2",
+				        type text
+				      },
+				      {
+				        "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestMe.1",
+				        type text
+				      },
+				      {
+				        "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.DigestValu",
+				        type text
+				      },
+				      {
+				        "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignedInfo.Reference.Attribute:",
+				        type text
+				      },
+				      {"NFe.http://www.w3.org/2000/09/xmldsig#.Signature.SignatureValue", type text},
+				      {
+				        "NFe.http://www.w3.org/2000/09/xmldsig#.Signature.KeyInfo.X509Data.X509Certificat",
+				        type text
+				      },
+				      {"protNFe.infProt.tpAmb", Int64.Type},
+				      {"protNFe.infProt.verAplic", type text},
+				      {"protNFe.infProt.chNFe", type number},
+				      {"protNFe.infProt.dhRecbto", type datetimezone},
+				      {"protNFe.infProt.nProt", Int64.Type},
+				      {"protNFe.infProt.digVal", type text},
+				      {"protNFe.infProt.cStat", Int64.Type},
+				      {"protNFe.infProt.xMotivo", type text},
+				      {"protNFe.Attribute:versao", Int64.Type},
+				      {"Attribute:versao", Int64.Type}
+				    }
+				  )
+				in
+				    TipoAlterado
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
