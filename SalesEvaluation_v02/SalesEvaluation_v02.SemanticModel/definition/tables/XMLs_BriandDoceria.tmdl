@@ -328,7 +328,7 @@ table XMLs_BriandDoceria
 		queryGroup: 'Tabela Consolidada'
 		source =
 				let
-				    Fonte = Table.Combine({XMLs_BriandDoceria_202401, XMLs_BriandDoceria_202402, XMLs_BriandDoceria_202403, XMLs_BriandDoceria_202404, XMLs_BriandDoceria_202405, XMLs_BriandDoceria_202406, XMLs_BriandDoceria_202407, XMLs_BriandDoceria_202408, XMLs_BriandDoceria_202409})
+				    Fonte = Table.Combine({XMLs_BriandDoceria_202401, XMLs_BriandDoceria_202402, XMLs_BriandDoceria_202403, XMLs_BriandDoceria_202404, XMLs_BriandDoceria_202405, XMLs_BriandDoceria_202406, XMLs_BriandDoceria_202407, XMLs_BriandDoceria_202408, XMLs_BriandDoceria_202409, XMLs_BriandDoceria_202410})
 				in
 				    Fonte
 
