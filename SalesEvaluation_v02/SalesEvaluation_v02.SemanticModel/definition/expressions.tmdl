@@ -394,3 +394,47 @@ expression XMLs_BriandDoceria_202409 =
 
 	annotation PBI_ResultType = Table
 
+expression XMLs_BriandDoceria_202410 =
+		let
+		  FonteJSON = Json.Document(Web.Contents("https://natanluizrc.sharepoint.com/sites/SalesEvaluation/Documentos%20Compartilhados/JSONs/BriandDoceria/2024/XMLs_BriandDoceria_202410.json")),
+		  CriarTabela = Table.FromList(FonteJSON, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+		  ExpandirRaiz = Table.ExpandRecordColumn(CriarTabela, "Column1", {"nfeProc"}),
+		  ExpandirNFe = Table.ExpandRecordColumn(ExpandirRaiz, "nfeProc", {"NFe", "protNFe"}),
+		  ExpandirInfNFe = Table.ExpandRecordColumn(ExpandirNFe, "NFe", {"infNFe"}),
+		  ExpandirNota = Table.ExpandRecordColumn(ExpandirInfNFe, "infNFe", {"ide", "emit", "det", "total", "pag"}),
+		  ExpandirIde = Table.ExpandRecordColumn(ExpandirNota, "ide", {"cUF", "mod", "serie", "nNF", "dhEmi"}, {"NotaFederacao", "NotaModelo", "NotaSerie", "NotaNumero", "NotaEmissao"}),
+		  ExpandirEmitente = Table.ExpandRecordColumn(ExpandirIde, "emit", {"CNPJ", "IE", "xNome", "xFant"}, {"EmitenteCNPJ", "EmitenteIE", "EmitenteRazao", "EmitenteFantasia"}),
+		  ExpandirTotal = Table.ExpandRecordColumn(ExpandirEmitente, "total", {"ICMSTot"}),
+		  ExpandirICMSTot = Table.ExpandRecordColumn(ExpandirTotal, "ICMSTot", {"vNF"}, {"NotaValor"}),
+		  ExpandirPagamento = Table.ExpandRecordColumn(ExpandirICMSTot, "pag", {"detPag"}),
+		  ExpandirDetPag = Table.ExpandRecordColumn(ExpandirPagamento, "detPag", {"tPag"}),
+		  RenomearPagamento = Table.RenameColumns(ExpandirDetPag, {{"tPag", "NotaPagamento"}}),
+		  AjustarProdutos = Table.TransformColumns(RenomearPagamento, {"det", each if _ is list then _ else {_}}),
+		  ExpandirProdutos = Table.ExpandListColumn(AjustarProdutos, "det"),
+		  ExpandirDetalhes = Table.ExpandRecordColumn(ExpandirProdutos, "det", {"@nItem", "prod", "imposto"}),
+		  RenomearItem = Table.RenameColumns(ExpandirDetalhes, {{"@nItem", "ProdutoItem"}}),
+		  ExpandirProd = Table.ExpandRecordColumn(RenomearItem, "prod", {"cProd", "xProd", "NCM", "CEST", "CFOP", "qCom", "uTrib", "vProd"}, {"ProdutoCodigo", "ProdutoDescricao", "ProdutoNCM", "ProdutoCEST", "ProdutoCFOP", "ProdutoQuantidade", "ProdutoUnidade", "ProdutoValor"}),
+		  ExpandirImpostos = Table.ExpandRecordColumn(ExpandirProd, "imposto", {"ICMS", "PIS", "COFINS"}),
+		  ExpandirICMS = Table.ExpandRecordColumn(ExpandirImpostos, "ICMS", {"ICMS00"}),
+		  ExpandirICMSFinal = Table.ExpandRecordColumn(ExpandirICMS, "ICMS00", {"pICMS", "vICMS"}, {"IcmsAliquota", "IcmsValor"}),
+		  ExpandirPIS = Table.ExpandRecordColumn(ExpandirICMSFinal, "PIS", {"PISAliq"}),
+		  ExpandirPISFinal = Table.ExpandRecordColumn(ExpandirPIS, "PISAliq", {"pPIS", "vPIS"}, {"PisAliquota", "PisValor"}),
+		  ExpandirCOFINS = Table.ExpandRecordColumn(ExpandirPISFinal, "COFINS", {"COFINSAliq"}),
+		  ExpandirCOFINSFinal = Table.ExpandRecordColumn(ExpandirCOFINS, "COFINSAliq", {"pCOFINS", "vCOFINS"}, {"CofinsAliquota", "CofinsValor"}),
+		  ExpandirProtocolo = Table.ExpandRecordColumn(ExpandirCOFINSFinal, "protNFe", {"infProt"}),
+		  ExpandirInfProt = Table.ExpandRecordColumn(ExpandirProtocolo, "infProt", {"chNFe", "cStat", "xMotivo"}),
+		  RenomearChave = Table.RenameColumns(ExpandirInfProt, {{"chNFe", "NotaChave"}, {"cStat", "NotaStatus"}, {"xMotivo", "NotaMotivo"}}),
+		  AjustarTexto = Table.TransformColumns(RenomearChave, {{"EmitenteRazao", Text.Proper}, {"EmitenteFantasia", Text.Proper}, {"ProdutoDescricao", Text.Proper}, {"NotaPagamento", Text.Proper}, {"NotaMotivo", Text.Proper}}),
+		  SubstituirValores = Table.ReplaceValue(AjustarTexto, ".", ",", Replacer.ReplaceText, {"ProdutoQuantidade", "ProdutoValor", "IcmsAliquota", "IcmsValor", "PisAliquota", "PisValor", "CofinsAliquota", "CofinsValor", "NotaValor"}),
+		  CorrigirNulos = Table.ReplaceValue(SubstituirValores, null, 0, Replacer.ReplaceValue, {"ProdutoQuantidade", "ProdutoValor", "IcmsAliquota", "IcmsValor", "PisAliquota", "PisValor", "CofinsAliquota", "CofinsValor", "NotaValor"}),
+		  CorrigirErros = Table.ReplaceErrorValues(CorrigirNulos, {{"NotaPagamento", "00"}}),
+		  AlterarTipos = Table.TransformColumnTypes(CorrigirErros, {{"NotaFederacao", type text}, {"NotaModelo", type text}, {"NotaSerie", type text}, {"NotaNumero", type text}, {"NotaEmissao", type datetimezone}, {"EmitenteCNPJ", type text}, {"EmitenteIE", type text}, {"EmitenteRazao", type text}, {"EmitenteFantasia", type text}, {"ProdutoItem", type text}, {"ProdutoCodigo", type text}, {"ProdutoDescricao", type text}, {"ProdutoNCM", type text}, {"ProdutoCEST", type text}, {"ProdutoCFOP", type text}, {"ProdutoQuantidade", type number}, {"ProdutoUnidade", type text}, {"ProdutoValor", type number}, {"IcmsAliquota", type number}, {"IcmsValor", type number}, {"PisAliquota", type number}, {"PisValor", type number}, {"CofinsAliquota", type number}, {"CofinsValor", type number}, {"NotaValor", type number}, {"NotaPagamento", type text}, {"NotaChave", type text}, {"NotaStatus", type text}, {"NotaMotivo", type text}})
+		
+		in
+		  AlterarTipos
+	lineageTag: 1180e68e-7681-4fd0-97bb-dba8d7a49d29
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
